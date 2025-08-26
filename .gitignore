@@ -1,1 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.dll
+*.o
+*.a
+*.dylib
+*.pyo
+*.pdb
+
+# Cython and build artifacts
+/build/
+/build
+/dist/
+/dist
+*.c
+*.cpp
+*.pyd
+*.egg-info/
+*.manifest
+*.spec
+python_wrapper/build/
+python_wrapper/*.c
+python_wrapper/*.so
+python_wrapper/*.pyd
+python_wrapper/*.o
+python_wrapper/*.dylib
+
+# CMake build
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# VS Code
+.vscode/
+
+# Devcontainer
+.devcontainer/.env
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# OS files
 /.DS_Store
+Thumbs.db
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+
+# Misc
+*.swp
+*.swo
+*~
+
+# Ignore user data
+*.user
+*.sublime-workspace
+*.sublime-project
