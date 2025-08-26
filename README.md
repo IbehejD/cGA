@@ -41,10 +41,13 @@ cGA/
    ```sh
    python fabricate.py
    ```
+   necessary for python API
+   
 3. Run the Python example:
    ```sh
    python examples/python/main.py
    ```
+   main.py uses objective function definition as shown in fitness.py
 
 ## License
 MIT License. See source files for details.
