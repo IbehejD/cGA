@@ -3,5 +3,5 @@
 # This software is released under the MIT License.
 # https://opensource.org/licenses/MIT
 
-def fitness(x: str) -> float:
+def fitness_function(x: str) -> float:
     return float(int(x, 2))
