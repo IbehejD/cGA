@@ -1,0 +1,19 @@
+{
+    "name": "cGA Dev Container",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools",
+        "ms-azuretools.vscode-docker",
+        "ms-python.vscode-pylance"
+    ],
+    "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt || true",
+    "remoteUser": "root",
+    "workspaceFolder": "/workspace"
+}
