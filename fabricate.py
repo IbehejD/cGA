@@ -13,6 +13,10 @@ def run_cmake_and_build():
 
     os.makedirs(wrapper_dir, exist_ok=True)
 
+    # Run cmake and build the C shared library
+    subprocess.check_call(["cmake", "-S", ".", "-B", build_dir])
+    subprocess.check_call(["cmake", "--build", build_dir])
+
     # Run python setup.py build_ext --inplace, output to wrapper_dir
     subprocess.check_call([
         sys.executable, "setup.py", "build_ext", "--inplace", f"--build-lib=../{wrapper_dir}"

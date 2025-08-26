@@ -49,5 +49,20 @@ cGA/
    ```
    main.py uses objective function definition as shown in fitness.py
 
+## Julia API Wrapper
+
+The project provides a Julia API wrapper for the C backend, allowing you to call the genetic algorithm from Julia and use Julia-defined fitness functions.
+
+### Usage
+1. Build the C shared library (see build instructions above).
+2. Use the wrapper and example in `julia_wrapper/` and `examples/julia/`:
+   ```sh
+   julia examples/julia/main.jl
+   ```
+   This will call the C algorithm with a Julia callback as the fitness function.
+
+### Example
+See `julia_wrapper/algorithm_wrapper.jl` and `examples/julia/main.jl` for details on how to define a Julia fitness function and call the C API.
+
 ## License
 MIT License. See source files for details.
